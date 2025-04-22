@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WeldCraft Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  section {
+    scroll-margin-top: 100px;
+  }
+  .hero .btn {
+  font-weight: bold;
+  border: 2px solid #7c0a02;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #7c0a02;
+}
+.hero .btn:hover {
+  background-color: #7c0a02;
+  color: white;
+}
+  .hero {
+    background: url('hero-bg.jpeg') center center / cover no-repeat;
+    padding: 100px 0;
+    text-align: center;
+  }
+  .hero h1,
+  .hero p.lead,
+  .hero .btn {
+    color: #7c0a02;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 6px 14px;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  .hero h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+  .hero p.lead {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.2rem;
+  }
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+  .navbar-brand span {
+    color: #fd7e14;
+  }
+  .navbar {
+    background-color: #000 !important;
+  }
+  .services {
+    background: #2c2c2c;
+    color: #fff;
+  }
+  #skills {
+    background: #1e1e1e;
+    color: #fff;
+  }
+  #about {
+    background: #2c2c2c;
+    color: #fff;
+  }
+  #contact {
+    background: #1e1e1e;
+    color: #fff;
+  }
+  .why-choose {
+    background-color: #b87333;
+    color: #fff;
+  }
+  .how-i-work {
+    background-color: #7c0a02;
+    color: #fff;
+  }
+  .gallery-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .gallery-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><span>WeldCraft</span> Solutions</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Startseite</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Leistungen</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Fähigkeiten</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Über mich</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html" target="_blank">Meine Arbeiten</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="container" data-aos="fade-up">
+    <h1>Ihre Projekte, Unser Handwerk</h1>
+    <p class="lead mt-3">Mit über 15 Jahren Erfahrung im Schweißen verwirklichen wir Ihre Ideen — spezialisiert auf Geländer, Tore und Metallkonstruktionen.</p>
+    <div class="mt-4">
+      <a href="#contact" class="btn btn-light me-3">Angebot Anfordern</a>
+      <a href="gallery.html" target="_blank" class="btn btn-outline-light">Meine Projekte</a>
+    </div>
+  </div>
+</section>
+
+<!-- Leistungen -->
+<section class="services py-5" id="services">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Unsere Schweißleistungen</h2>
+    <div class="row text-center">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <i class="bi bi-house-door-fill" style="font-size: 2rem; color: #fd7e14;"></i>
+        <h5 class="mt-2">Treppengeländer</h5>
+        <p>Robuste und elegante Geländer für private und industrielle Gebäude — maßgefertigt für Sicherheit und Design.</p>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-hammer" style="font-size: 2rem; color: #fd7e14;"></i>
+        <h5 class="mt-2">Individuelle Konstruktionen</h5>
+        <p>Schweißen maßgeschneiderter Metallrahmen nach Ihren Anforderungen, Belastungen und Designwünschen.</p>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-door-open" style="font-size: 2rem; color: #fd7e14;"></i>
+        <h5 class="mt-2">Tore & Zäune</h5>
+        <p>Herstellung und Montage von Metalltoren und Zäunen für Privat- und Geschäftskunden — langlebig und optisch ansprechend.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Warum Ich? -->
+<section class="py-5 why-choose">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">Warum Mich Wählen?</h2>
+    <div class="row text-center">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <i class="bi bi-award" style="font-size: 2.5rem; color: #fff;"></i>
+        <h5 class="mt-3">15+ Jahre Erfahrung</h5>
+        <p>Erfahrener Schweißer mit einem bewährten Ruf für zuverlässige und ästhetische Metallarbeiten.</p>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-lightning-charge" style="font-size: 2.5rem; color: #fff;"></i>
+        <h5 class="mt-3">Schnell & Zuverlässig</h5>
+        <p>Pünktliche Fertigstellung aller Projekte mit klarer Kommunikation und Qualitätskontrolle.</p>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-shield-check" style="font-size: 2.5rem; color: #fff;"></i>
+        <h5 class="mt-3">Langlebigkeit Garantiert</h5>
+        <p>Jedes Werkstück wird für den langfristigen Einsatz gefertigt — mit hochwertigen Materialien und perfektem Finish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wie Ich Arbeite -->
+<section class="py-5 how-i-work">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up">Wie Ich Arbeite</h2>
+    <div class="row text-center">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <i class="bi bi-chat-square-dots" style="font-size: 2rem; color: #fd7e14;"></i>
+        <h6 class="mt-3">Schritt 1: Beratung</h6>
+        <p>Wir besprechen Ihre Projektziele, technischen Anforderungen und den Zeitrahmen – telefonisch oder per E-Mail.</p>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-gear-wide-connected" style="font-size: 2rem; color: #fd7e14;"></i>
+        <h6 class="mt-3">Schritt 2: Fertigung</h6>
+        <p>Ihr individuelles Werkstück wird fachgerecht geschweißt und gemäß den Spezifikationen geprüft.</p>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-truck" style="font-size: 2rem; color: #fd7e14;"></i>
+        <h6 class="mt-3">Schritt 3: Lieferung</h6>
+        <p>Das Endprodukt wird geliefert oder montiert — bereit für den langjährigen Einsatz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fähigkeiten -->
+<section class="py-5" id="skills">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Meine Fähigkeiten</h2>
+    <div class="row text-center">
+      <div class="col-md-2 col-4 mb-4" data-aos="fade-up" data-aos-delay="50">
+        <i class="bi bi-tools" style="font-size: 2.5rem; color: #fd7e14;"></i>
+        <p class="mt-2">Schweißen</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <i class="bi bi-gear-fill" style="font-size: 2.5rem; color: #fd7e14;"></i>
+        <p class="mt-2">Metallbearbeitung</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4" data-aos="fade-up" data-aos-delay="150">
+        <i class="bi bi-building" style="font-size: 2.5rem; color: #fd7e14;"></i>
+        <p class="mt-2">Bau</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+        <i class="bi bi-brush" style="font-size: 2.5rem; color: #fd7e14;"></i>
+        <p class="mt-2">Design</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4" data-aos="fade-up" data-aos-delay="250">
+        <i class="bi bi-person-workspace" style="font-size: 2.5rem; color: #fd7e14;"></i>
+        <p class="mt-2">Selbstständig</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-building-gear" style="font-size: 2.5rem; color: #fd7e14;"></i>
+        <p class="mt-2">Industrie</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Über Mich -->
+<section class="py-5" id="about">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Über Mich</h2>
+    <p class="lead text-center" data-aos="fade-up">Mit über 15 Jahren praktischer Erfahrung biete ich professionelle Schweißarbeiten und Metallverarbeitung aus meiner Heimwerkstatt sowie im Unternehmen <strong>Greben d.o.o.</strong> an.</p>
+    <p class="text-center" data-aos="fade-up" data-aos-delay="100">Meine Spezialisierung umfasst Treppengeländer, Tore, Stahlrahmen und kreative Metalllösungen. Funktionalität und Ästhetik stehen bei jedem Projekt im Mittelpunkt.</p>
+  </div>
+</section>
+
+<!-- Kundenmeinungen -->
+<section class="py-5" style="background-color: #2c2c2c; color: #fff;">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Was Kunden Sagen</h2>
+    <div class="row text-center">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <blockquote class="blockquote">
+          <p>"Schnell, stabil und präzise. Unser Treppengeländer wurde maßgefertigt und sieht großartig aus!"</p>
+          <footer class="blockquote-footer mt-2 text-white-50">Privatkunde</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <blockquote class="blockquote">
+          <p>"Professionell von Anfang bis Ende. Edin fertigte eine stabile Konstruktion für unseren Geschäftseingang."</p>
+          <footer class="blockquote-footer mt-2 text-white-50">Firmeninhaber</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <blockquote class="blockquote">
+          <p>"Top Qualität und Kommunikation. Genau das geliefert, was wir benötigt haben."</p>
+          <footer class="blockquote-footer mt-2 text-white-50">Baupartner</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Galerie -->
+<section class="py-5" id="gallery" style="background-color: #1e1e1e; color: #fff;">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Projektgalerie</h2>
+    <div class="row g-3">
+      <div class="col-md-4 col-6" data-aos="zoom-in"><img src="work1.jpeg" class="img-fluid rounded gallery-img" alt="Projekt 1"></div>
+      <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100"><img src="work2.jpeg" class="img-fluid rounded gallery-img" alt="Projekt 2"></div>
+      <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200"><img src="work3.jpeg" class="img-fluid rounded gallery-img" alt="Projekt 3"></div>
+      <div class="col-md-4 col-6" data-aos="zoom-in"><img src="work4.jpeg" class="img-fluid rounded gallery-img" alt="Projekt 4"></div>
+      <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100"><img src="work5.jpeg" class="img-fluid rounded gallery-img" alt="Projekt 5"></div>
+      <div class="col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200"><img src="work6.jpeg" class="img-fluid rounded gallery-img" alt="Projekt 6"></div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="gallery.html" class="btn btn-warning text-dark">Weitere Projekte ansehen</a>
+    </div>
+  </div>
+</section>
+<!-- Kontakt -->
+<section class="py-5" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Kontakt</h2>
+    <p class="lead text-center" data-aos="fade-up">Für Anfragen, Preisangebote oder Zusammenarbeit – kontaktieren Sie mich gerne:</p>
+    <p class="text-center" data-aos="fade-up" data-aos-delay="100"><strong>E-Mail:</strong> <a href="mailto:edindtrix@example.com" class="text-white">edindtrix@example.com</a></p>
+    <p class="text-center" data-aos="fade-up" data-aos-delay="150"><strong>Telefon:</strong> <a href="tel:+38761123456" class="text-white">+387 61 123 456</a></p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black text-light text-center py-3">
+  <p class="mb-0">© 2025 WeldCraft Solutions. Alle Rechte vorbehalten.</p>
+</footer>
+
+<!-- Scroll-Top Button (links) -->
+<a href="#hero" class="btn btn-primary scroll-top"><i class="bi bi-arrow-up"></i></a>
+
+<!-- Bootstrap & AOS Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true });
+
+  const OFFSET_Y = 100;
+  function scrollToTargetWithOffset(targetSelector) {
+    const element = document.querySelector(targetSelector);
+    if (!element) return;
+    const y = element.getBoundingClientRect().top + window.pageYOffset - OFFSET_Y;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+  document.querySelectorAll('.nav-link[href^="#"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const target = this.getAttribute('href');
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      if (navbarCollapse.classList.contains('show')) {
+        navbarToggler.click();
+      }
+      setTimeout(() => scrollToTargetWithOffset(target), 300);
+    });
+  });
+</script>
+
+<!-- Fester Sprachumschalter unten rechts -->
+<div class="position-fixed bottom-0 end-0 p-2 px-3 text-end shadow-lg" style="z-index: 999; background-color: #fd7e14; border-top-left-radius: 10px;">
+  <div class="d-flex align-items-center gap-2">
+    <a href="index.html" class="btn btn-sm text-white bg-black d-flex align-items-center gap-1">
+      EN <span>🇬🇧</span>
+    </a>
+    <a href="index-bs.html" class="btn btn-sm text-white bg-black d-flex align-items-center gap-1">
+      BS <span>🇧🇦</span>
+    </a>
+    <a href="index-de.html" class="btn btn-sm text-white bg-black d-flex align-items-center gap-1">
+      DE <span>🇩🇪</span>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>
